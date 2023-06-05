@@ -19,6 +19,8 @@ services:
       - ./php/laravel.ini:/usr/local/etc/php/conf.d/laravel.ini
     networks:
       - app-network
+    ports: 
+      - "9000:9000"
 
   vue:
     stdin_open: true
